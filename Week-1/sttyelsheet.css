@@ -1,0 +1,22 @@
+#page-title{
+    color: darkgray;
+    font-size: 40px;
+    font-style: italic;
+
+
+}
+.favorite-section{
+    border: 2px black solid;
+    padding: 20px;
+    margin: 25px;
+    height: 550px;
+
+}
+
+body{
+    background-color: floralwhite;
+}
+
+.img-desc{
+    padding: 5px;
+}
