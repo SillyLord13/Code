@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conference Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h1>Registration form 2020 Occultism Research and Implementation Conference- Upper Midwest Division </h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+            <div class="ml-5 mr-3">
+                <h4>Welcome to the 139th Annual Occultism Research and Implementation Conference!</h4>
+                <p>We are pleased to be witnessing major strides in our global conversion efforts this year. Many of you have
+                been tirelessly working around the clock to bring about each sects special and unique cataclysmic witnessing
+                event! In response to last year's enthusiastic feedback concerning changing our conference registration procedures,
+                we are proud to share our electronic registration form! Of course, we are sad to see our contract with
+                The Mournful Ecclesiastic Monks of the Tongueless Beast end, but such is progress. It has made the clean up
+                process much simpler; no more scarred palms for our modern participants.</p>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <form class="mx-3">
+                <label for="name">Prefered Name:</label><input id="name" class="form-control" name="name" type="text" maxlength="70" required><br>
+                <label for="password">Password:</label><input id="password" class="form-control" name="password" type="password" required><br>
+                <label for="email">Email:</label><input id="email" class="form-control" name="email" type="email" required><br>
+
+                <p class="form-text">Size for complimentary Ominous Hooded Robe:</p>
+                <select required>
+                    <option>Unworthy Worm</option>
+                    <option>Embraced Apprentice</option>
+                    <option>Standard Acolyte</option>
+                    <option>Unseeing Enlightened Host</option>
+                    <option>Head of Ceremonies</option>
+                    <option>Unknowable Horror from beyond Time and Space</option>
+                </select>
+                <br>
+                <label for="birthDate">Date of Birth:</label><input id="birthDate" class="form-control" name="birthDate" type="date" required><br>
+                <label for="yearsWorshipped">How many years have you been apart of your group?</label><br>
+                <input id="yearsWorshipped" name="yearsActive" class="form-control" type="number" value="1" required><br>
+                <label>Cult Sect:</label><input class="form-control" type="text">
+                <p class="form-text">Please select your blood sworn deity</p>
+                <select>
+                    <option>The Crawling Chaos</option>
+                    <option>Zhalgo</option>
+                    <option>Leviathan</option>
+                    <option>Garfield</option>
+                    <option>Nya'hotep</option>
+                    <option>Oglogoth</option>
+                    <option>The Dread Wolf</option>
+                    <option>The Invisible Hand of Capitalism</option>
+                    <option>Other</option>
+                </select>
+
+                <p class="form-text">Would you like to receive advertisements or forbidden knowledge from this year's sponsors?</p>
+                <div class="form-check">
+                    <input name="receiveInfo" id="yes" class="form-check-input" type="radio" checked>
+                    <label for="yes">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input name="receiveInfo" id="no" class="form-check-input" type="radio">
+                    <label for="no">No</label>
+                </div>
+
+                <p class="form-text">Which conference session(s) do you wish to attend?</p>
+                Morning<input type="checkbox">
+                Afternoon<input  type="checkbox">
+                Midnight<input type="checkbox">
+
+                <p class="form-text">Please provide any additional needs (e.i. allergies, mandatory sacrifices, dietary restrictions, etc...)</p>
+                <textarea rows="7" cols="70"></textarea>
+
+                <input class="btn btn-primary mt-3" type="submit">
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

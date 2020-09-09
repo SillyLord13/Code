@@ -1,0 +1,18 @@
+#real-alert{
+    display: block;
+    text-align: center;
+    font-family: "Arial";
+    font-size: 52px;
+    margin: 50px;
+    padding: 50px;
+    color: red;
+    border: black solid 5px;
+}
+
+#test-only{
+    border: cornflowerblue dashed 2px;
+    border-radius: 70%;
+    text-align: right;
+    padding: 10px;
+    color: cornflowerblue;
+}
