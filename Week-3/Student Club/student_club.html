@@ -88,7 +88,7 @@
         let gpaText = gpaInput.value
 
         // check that the input values meet the criteria
-        if (nameText.length < 0 || idText.length < 0 || gpaText < 0 || gpaText > 4){
+        if (!nameText || !idText|| !gpaText ||gpaText < 0 || gpaText > 4){
             alert('Unauthorized input. Please Enter Student Name, Student ID, and Valid GPA.')
         }
 
