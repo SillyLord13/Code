@@ -223,36 +223,32 @@ let nobel_prize_winners_2017 = {
 
 
 //print the full name of the Literature Nobel laureate.
-let laurates = nobel_prize_winners_2017.prizes
-literature = laurates[3]
+let prizes = nobel_prize_winners_2017.prizes
+literature = prizes[3]
 let literatureWinners = literature.laureates
 details = literatureWinners[0]
 console.log('The nobel prize for literature was',details.firstname,details.surname)
 
 //print the ids of each of the Physics Nobel laureates.
-chemInfo = laurates[0]
+chemInfo = prizes[0]
 let chemLaurates = chemInfo.laureates
 chemLaurates.forEach(function (element){
     console.log(element.id)
 })
 
-// TODO write code to print the names of all of the prize categories (So your output would start physics, chemistry, medicine... ).
+//print the names of all of the prize categories
+for(let i = 0; i < prizes.length; i++){
+    console.log(prizes[i].category)
+}
 
-laurates.forEach(function (a){
-    obj1 = a
-    let count = 0
-    obj1.forEach(function (b){
-        let winnerArray = []
-        winnerArray[count] = b
-        count = count+1
-        winnerArray.forEach(function (c){
-            console.log(c.firstname,c.surname)
+//print the total number of prize categories
+console.log(prizes.length, 'prize categories')
+
+//counts the total number of laureates from 2017.
+let totalLaureates = []
+for(let i = 0; i < prizes.length; i++){
+    prizes[i].laureates.forEach(function (a){
+        totalLaureates.push(a)
     })
-
-    })
-})
-
-// TODO write code to print the total number of prize categories
-
-// TODO write code to count the total number of laureates from 2017.
-//   have a good look at how the JSON is structured, and think about what loop(s) you'll need to write.
+}
+console.log(totalLaureates.length,'noble prizes were given out in 2017')
